@@ -1,9 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div class='jumbotron' style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Dojo Weather Forecast
   </h1>
-  <button [routerLink]="['alpha']">Load Alpha</button>
-  <button [routerLink]="['beta']">Load Beta</button>
-  <button [routerLink]="['gamma']">Load Gamma</button>
-  <router-outlet></router-outlet> 
+  </div>
+  <div class='container'>
+  <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['seattle']">Seattle WA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['sanjose']">San Jose CA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['burbank']">Burbank CA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['dallas']">Dallas TX</a>
+      </li>
+    </ul>
+    <router-outlet></router-outlet> 
+  </div>
